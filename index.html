@@ -5,17 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- CSS -->
   <script defer src="/dist/script.js"></script>
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+   integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+   crossorigin="anonymous"
+   referrerpolicy="no-referrer"
+  />
+
   <link rel="stylesheet" href="/dist/style.css" />
   <!--end of CSS 
       and start of favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   <!-- end of the favicon 
        and the start of the fonts families-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet" />
   <!-- end of fonts families -->
-  <title>Frontend Mentor | Stats preview card component</title>
+  <title>Frontend Mentor | Newbie Challenges HTML and CSS</title>
  </head>
  <body>
   <div class="center">
@@ -24,7 +29,28 @@
     <button id="dark-mode" class="dark-mode-btn">dark mode</button>
    </nav>
    <main id="main">
-    <section></section>
+    <section id="thumbnail-carousel" class="splide" aria-label="Projects">
+     <div class="splide__track">
+      <ul class="splide__list">
+       <li class="splide__slide">
+        <a href="https://2th-project-qr-code-component.netlify.app/">
+         <picture>
+          <source media="(min-width: 46.875em)" srcset="/images/project-1-desktop.png" />
+          <img src="/images/project-1-mobile.png" alt="QR Code Component" />
+         </picture>
+        </a>
+       </li>
+       <li class="splide__slide">
+        <a href="https://2th-project-qr-code-component.netlify.app/">
+         <picture>
+          <source media="(min-width: 46.875em)" srcset="/images/project-1-desktop.png" />
+          <img src="/images/project-1-mobile.png" alt="QR Code Component" />
+         </picture>
+        </a>
+       </li>
+      </ul>
+     </div>
+    </section>
    </main>
    <footer class="attribution">
     <div id="logo">
