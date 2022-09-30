@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- CSS -->
+  <script defer src="/dist/glide.min.js"></script>
   <script defer src="/dist/script.js"></script>
   <link
    rel="stylesheet"
@@ -12,7 +13,8 @@
    crossorigin="anonymous"
    referrerpolicy="no-referrer"
   />
-
+  <link rel="stylesheet" href="/dist/glide.core.min.css" />
+  <link rel="stylesheet" href="/dist/glide.theme.min.css" />
   <link rel="stylesheet" href="/dist/style.css" />
   <!--end of CSS 
       and start of favicon -->
@@ -29,27 +31,24 @@
     <button id="dark-mode" class="dark-mode-btn">dark mode</button>
    </nav>
    <main id="main">
-    <section id="thumbnail-carousel" class="splide" aria-label="Projects">
-     <div class="splide__track">
-      <ul class="splide__list">
-       <li class="splide__slide">
-        <a href="https://2th-project-qr-code-component.netlify.app/">
-         <picture>
-          <source media="(min-width: 46.875em)" srcset="/images/project-1-desktop.png" />
-          <img src="/images/project-1-mobile.png" alt="QR Code Component" />
-         </picture>
-        </a>
+    <section class="images glide">
+     <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+       <li class="glide__slide">
+        <picture>
+         <source media="(max-width: 46.875em)" srcset="/images/project-1-mobile.png" />
+         <img src="/images/project-1-desktop.png" alt="" />
+        </picture>
        </li>
-       <li class="splide__slide">
-        <a href="https://2th-project-qr-code-component.netlify.app/">
-         <picture>
-          <source media="(min-width: 46.875em)" srcset="/images/project-1-desktop.png" />
-          <img src="/images/project-1-mobile.png" alt="QR Code Component" />
-         </picture>
-        </a>
+       <li class="glide__slide">
+        <picture>
+         <source media="(max-width: 46.875em)" srcset="/images/project-1-mobile.png" />
+         <img src="/images/project-1-desktop.png" alt="" />
+        </picture>
        </li>
       </ul>
      </div>
+     <div class="glide__arrows" data-glide-el="controls"></div>
     </section>
    </main>
    <footer class="attribution">
